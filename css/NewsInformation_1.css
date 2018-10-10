@@ -1,0 +1,24 @@
+.center3 figure{
+	width:100%;
+	height: 100%;
+	margin-top:20px;
+	padding-bottom:50px;
+}
+.center3 hgroup{
+	width:100%;
+	height:50px;
+	font-size:22px;
+	text-align: center;
+	font-weight:500;
+}
+.center3 figure p{
+	text-align:right;
+	padding-bottom:20px;
+}
+.center3 figure section{
+	width:90%;
+	margin:0 auto;
+	font-size:18px;
+	line-height:30px;
+	text-indent:30px
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>产品介绍</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/menuBar_css.css">
+    <link rel="stylesheet" href="css/lrtk.css">
+    <style>
+    	body{
+			width: 100%;
+			background: #f0f0f0;
+			position: relative;
+		}
+		.top{
+            background:rgba(16,36,63,.8);
+        }
+       /* .nav li a{
+        	color:#000;
+        }
+        .navTab li a{
+        	color:#000;
+        }*/
+		.center{
+			width: 100%;
+			margin-top:100px;
+		}
+		.outerImg1{
+			margin-top:100px;
+		}
+		.outerImg1 img{
+			width: 100%;
+			height:70%;
+			position: absolute;z-index: -2;top:-100px;
+		}
+		.outerImg2{
+			width: 100%;
+			height:80%;
+			background: url(images/page_bannerskin.png) 0 0;
+			position: absolute;top:-100px;z-index: -1;
+			opacity: .5;
+		}
+		#box{
+			width:80%;
+			margin: 0 auto 0;
+			position: relative;
+		}
+		#box .outer{
+			width: 100%;
+			height:400px;
+			overflow: hidden;
+			border:10px solid #fff;
+		}
+		#box .inner{
+			width: 400%;
+			height:100%;
+			overflow: hidden;
+		}
+		#box .imgs{
+			width:25%;
+			height:100%;
+			float: left;
+			overflow: hidden;
+		}
+		#box img{
+			width:100%;
+			height:100%;
+			overflow: hidden;
+		}
+		#box p{
+			width:40px;
+			height:70px;
+			font-size: 28px;
+			text-align: center;
+			background:#151515;
+			opacity: .3;
+			color: #fff;
+			line-height:70px;
+			position: absolute;
+			cursor:pointer;
+		}
+		#box p:hover{
+			opacity:1;
+		}
+		#box .left{
+			left: 10px;
+			top:40%;
+		}
+		#box .right{
+			right:-10px;
+			top:40%;
+		}
+		/*#box section{
+			width:100%;
+			border:1px solid red;
+			color: #c1c3f9;
+			margin:40px auto;
+			text-indent:30px;
+			opacity:.7;
+		}
+		#box i{
+			font-size:24px;
+			color: #fff;
+		}*/
+		#box ul{
+			/*width:400px;*/
+			list-style: none;
+			overflow: hidden;
+			position: absolute;left:38%;top:90%;
+		}
+		#box li{
+			width: 60px;
+			height: 10px;
+			float: left;
+			margin: 0 5px;
+			text-align: center;
+			background-color: rgba(150,150,250,.5);
+		}
+		#box .select{
+			background: gray;
+		}
+
+	/*center2*/
+		.cen1Inner1{
+			padding-top:5%;
+			-webkit-animation:fall 2s ease-in 1;
+		}
+		.cen1Inner1 p{
+			text-align: center;
+			text-shadow: -8px -7px 8px rgba(25,25,200,.5),5px 5px 5px rgba(168,168,168,1),20px 8px 10px rgba(40,20,100,1);
+			font-size:22px;
+			line-height:30px;
+		}
+		.cen1Inner1 p:nth-child(1){
+			color:#199bee;
+		}
+		.cen1Inner1 p:nth-child(2){
+			color:#6690dd;
+		}
+		@keyframes fall{
+			from{
+				padding-top:2%;
+				opacity: 0;
+			}
+			to{
+				padding-top:5%;
+				opacity: 1;
+			}
+		}
+		.center2{
+			width:80%;
+			/*height:1000px;*/
+			margin:0 auto;
+			position: relative;
+			/*border:1px solid red;*/
+		}
+		.NewTap{
+			width:100%;
+			height:120px;
+			margin:50px auto 0;
+			background: rgba(251,247,244,1);
+			-webkit-animation:fall3 2s ease-in 1;
+		}
+		.NewTap span{
+			display: inline-block;
+			float: left;
+			width: 20%;
+			height:95px;
+			background: rgba(251,247,244,1);
+			padding-top:25px;
+			text-align: center;
+			color: #404143;
+			font-size: 20px;
+			border-right:1px solid #ccc;
+			border-top:1px solid #ccc;
+			border-bottom:1px solid #ccc;
+			cursor: pointer;
+		}
+		.NewTap span i{
+			font-size:16px;
+			color: #6d81aa;
+		}
+		.NewTap img{
+			display: none;
+		}
+		#point{
+			background:rgba(117,191,233,1);
+			color: #fff;
+		}
+		#point i{
+			color: #d7e0f7;
+		}
+		.NewTap #point img{
+			display: block;
+			margin:5px auto;
+		}
+/*center3*/
+		.center3{
+			width: 100%;
+			/*height:500px;*/
+			margin: 0 auto;
+			padding:50px 0 100px;
+			background:#fff;
+		}
+		.center3 figcaption{
+			font-weight:500;
+			font-size:24px;
+			text-align: center;
+			margin-bottom:40px;
+		}
+		.center3 section{
+			padding:0 50px;
+			text-indent:30px;
+			font-size:17px;
+			line-height:30px;
+		}
+		.center3 .taps{
+			display: none;
+			/*padding-top: 50px;*/
+
+		}
+		#TapShow{
+			display: block;
+		}
+		.totop{
+		cursor: pointer;
+		position:absolute;bottom:0;left: 45%;z-index:10;
+	}
+    </style>
+</head>
+<body>
+<!-- header -->
+	<header class="top">
+		<section class="topCont">
+			<img src="images/logologo.png" alt="">
+		</section>
+		<nav class="nav">
+			<ul id="ulHeaderNav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="NewsInformation.html" class="xiasanjiao">新闻资讯</a></li>
+				<li><a href="ProductIntroduction.html" class="xiasanjiao" id="select">产品介绍</a></li>
+				<li><a href="Solution.html" class="xiasanjiao">解决方案</a></li>
+				<li><a href="CustomerService_OnlineQuery.html" class="xiasanjiao">客户服务</a></li>
+				<li><a href="CustomerService_OnlineQuery.html" class="xiasanjiao">下载中心</a></li>
+				<li><a href="#" class="xiasanjiao">关于我们</a></li>
+			</ul>
+		</nav>
+		<section class="tab" id="popHeaderNav">
+		<!--新闻资讯 -->
+			<section class="navTab">
+                <ul class="">
+                    <li class=""><a href="#" class="">最新通知</a></li>
+                    <li class=""><a href="#" class="">公司新闻</a></li>
+                    <li class=""><a href="#" class="">行业动态</a></li>
+                    <li class=""><a href="#" class="">政策文件</a></li>
+                    <li class=""><a href="#" class="">标准规范</a></li>
+                </ul>
+            </section>
+        <!--产品介绍  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">个人证书</a></li>
+                    <li class=""><a href="#" class="">企业证书</a></li>
+                    <li class=""><a href="#" class="">服务器证书</a></li>
+                </ul>
+            </section>
+        <!--解决方案  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">证券行业</a></li>
+                    <li class=""><a href="#" class="">卫生行业</a></li>
+                    <li class=""><a href="#" class="">保险行业</a></li>
+                    <li class=""><a href="#" class="">电子政务行业</a></li>
+                    <li class=""><a href="#" class="">电子商务行业</a></li>
+                    <li class=""><a href="#" class="">银行电子认证</a></li>
+                </ul>
+            </section>
+        <!--客户服务  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">证书办理</a></li>
+                    <li class=""><a href="#" class="">业务流程</a></li>
+                    <li class=""><a href="#" class="">在线查询</a></li>
+                    <li class=""><a href="#" class="">常见问题</a></li>
+                    <li class=""><a href="#" class="">大客户区</a></li>
+                    <li class=""><a href="#" class="">联系客服</a></li>
+                    <li class=""><a href="#" class="">客户服务</a></li>
+                    <li class=""><a href="#" class="">证书查询</a></li>
+                </ul>
+            </section>
+        <!--下载中心  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">技术资料</a></li>
+                    <li class=""><a href="#" class="">软件驱动</a></li>
+                    <li class=""><a href="#" class="">申请材料</a></li>
+                    <li class=""><a href="#" class="">其他</a></li>
+                </ul>
+            </section>
+        <!--关于我们  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">联系我们</a></li>
+                    <li class=""><a href="#" class="">企业简介</a></li>
+                    <li class=""><a href="#" class="">资质荣誉</a></li>
+                    <li class=""><a href="#" class="">发展历程</a></li>
+                    <li class=""><a href="#" class="">诚聘精英</a></li>
+                    <li class=""><a href="#" class="">客户投诉</a></li>
+                </ul>
+            </section>
+		</section>
+	</header>
+<!--head结束-->
+<!--客服 -->
+	<div class="phone" id="top"></div>
+<!-- center -->
+	<section class="center">
+		<div class="outerImg1"><img src="images/page_banner.png" alt=""></div>
+		<div class="outerImg2"></div>
+	<!--Scroll -->
+		<div id="box">
+			<div class="outer">
+				<div class="inner">
+					<div class="imgs">
+						<a href=""><img src="img/5.jpg" class="con"></a>
+					</div>
+					 <div class="imgs">
+					 	<a href=""><img src="img/banneryz.jpg" class="con"></a>
+					</div>
+					<div class="imgs">
+						<a href=""><img src="img/banner.jpg" class="con"></a>
+					</div>
+					<div class="imgs">
+						<a href=""><img src="img/banner1.jpg" class="con"></a>
+					</div>
+				</div>
+				<ul>
+					<li class="select"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p class="left"><</p>
+				<p class="right">></p>
+			</div>
+		</div>
+	</section>
+	<section class="center2">
+		<div class="cen1Inner1">
+            <p>产品介绍</p>
+            <p>Product Introduction</p>
+        </div>
+		<div class="NewTap">
+			<span id="point" onclick="Show(0)">个人证书<br><i>（Personal certificate）</i><br><img src="images/barrow.png" alt=""></span>
+			<span onclick="Show(1)">企业证书<br><i>（Enterprise certificate）</i><br><img src="images/barrow.png" alt=""></span>
+			<span onclick="Show(2)">服务器证书<br><i>（Server certificate）</i><br><img src="images/barrow.png" alt=""></span>
+		</div>
+		<figure class="center3">
+			<div class="taps" id="TapShow">
+				<figcaption>个人证书</figcaption>
+				<section>个人身份证书中包含证书持有者的个人身份信息、公钥及CA的签名，在网络通讯中标识证书持有者的个人身份，可用于网上购物、网上证券、网上金融、网上拍卖、网上保险等多种应用系统。目前，个人证书主要以软盘为存储介质。</section>
+				<section>申请流程:</section>
+				<section>1． 用户下载并填写个人证书申请表。</section>
+				<section>2． 用户携带证书申请表和相关证件到HNXACA证书受理点办理申请，接受物理身份审核。</section>
+				<section>3． 受理点录入并审核用户信息后，发放证书软盘和对应的密码信封。</section>
+				<section>4． 用户根据密码信封，使用证书软盘中的证书制作程序生成个人证书。</section>
+				<section>5． 用户根据个人证书应用指南使用相关的证书业务。</section>
+			</div>
+			<div class="taps">
+				<figcaption>企业证书</figcaption>
+				<section>  Web企业证书中包含企业身份信息、公钥及CA的签名，在网络通讯中标识证书持有企业的身份，可用于网上税务申报、网上办公系统、网上招标投标、拍买拍卖、网上签约等多种应用系统。目前，企业证书的存储介质主要有软盘、IC卡和USB 接口棒等形式。</section>
+				<section>申请流程:</section>
+				<section>1． 用户下载并填写企业证书申请表。</section>
+				<section>2． 用户携带证书申请表和相关证件到HNXACA证书受理点办理申请，接受审核。</section>
+				<section>3． 受理点录入员将申请数据录入并提交给CA中心。</section>
+				<section>4． 受理点审核员以离线方式初步审核申请企业的身份、能力和信誉等。</section>
+				<section>5． 审核通过后，向CA中心发送证书的申请请求。</section>
+				<section>6． CA中心响应证书请求，为该用户签发证书。</section>
+				<section>7． 受理点制作操作员将签发后的证书灌制到证书介质中，连同对应的密码信封，发放给用户。</section>
+				<section>8． 用户根据企业证书应用指南使用相关的证书业务。</section>
+				<section>注：第7步中的证书制作过程，也可以由用户使用从受理点领取的密码信封到CA中心的网站上自行申请制作。</section>
+			</div>
+			<div class="taps">
+				<figcaption>服务器证书</figcaption>
+				<section>Web服务器证书是Web Server与用户浏览器之间建立安全连接时所使用的数字证书。Web Server申请了证书并装载成功，进行相关的配置后，即可与用户浏览器建立安全连接。可以要求浏览器客户端拥有数字证书，建立通信时Web Server和浏览器交换证书，验证对方身份后建立安全连接通道。</section>
+				<section>申请流程:</section>
+				<section>1． 需要申请证书的Web Server管理员在相应的Web Server上运行证书申请数据包生成程序，生成证书请求包（CSR）。</section>
+				<section>2． 相应的Web Server管理员登录CA中心网站，选择Web 服务器证书申请，填写Web Server的基本信息，并提交1中生成的证书请求包。</section>
+				<section>3． 在线提交成功后，相应的Web Server的管理机构携带相关证件到CA中心办理申请。</section>
+				<section>4． CA中心审核员将表格中填写的信息与用户在线填写的数据进行对比审核。</section>
+				<section>5． 审核通过后，CA中心制作证书，并将证书以软盘或者E-mail的方式发送给证书申请用户。</section>
+				<section>6． Web Server管理员在相应的Web Server上运行证书装载程序，将申请成功的证书装载到Web Server中。</section>
+				<section>7． 受理点制作操作员将签发后的证书灌制到证书介质中，连同对应的密码信封，发放给用户。</section>
+				<section>8． 用户根据企业证书应用指南使用相关的证书业务。</section>
+				<section>注：第7步中的证书制作过程，也可以由用户使用从受理点领取的密码信封到CA中心的网站上自行申请制作。</section>
+			</div>
+		</figure>
+		<img src="images/totop(1).png" alt="" class="totop">
+	</section>
+
+<!-- 底部 -->
+    <div class="footer" style="bottom:-20%;height: 20%;background: #3d3d3d;">
+        <div class="footer1">
+            <span>河南省信息安全电子认证中心 --</span>
+            <span>河南省信息化发展有限公司</span>
+            <span>客服电话：
+                <span class="inn1">（0371）96596</span>
+            </span>
+        </div>
+        <div class="footerImg">
+        	<img src="images/logo.png" alt="">
+        	<img src="images/weixin.jpg" alt="">
+        </div>
+        <p class="footer3">
+            <a href="#">返回首页</a>
+            |
+            <a href="">新闻资讯</a>
+            |
+            <a href="">产品介绍</a>
+            |
+            <a href="">解决方案</a>
+            |
+            <a href="">客户服务</a>
+            |
+            <a href="">下载中心</a>
+            |
+            <a href="">关于我们</a>
+        </p>
+        <p class="footer4"> CopyRight © 2017 hnxaca.com.All&nbspRights&nbspReserved.&nbsp豫ICP备14012421号-1&nbsp版权所有</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/byClass.js"></script>
+ <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/jsXiala_style2.js" ></script>
+<script type="text/javascript" src="js/lrtk.js" ></script>
+<script type="text/javascript">
+	var outer=document.getElementsByClassName("outer")[0];
+	var imgs=document.getElementsByClassName("imgs");
+	var lis=document.getElementById("box").getElementsByTagName("li");
+	var op=document.getElementById("box").getElementsByTagName("p");
+	var x=0,timer=null,timer2=null;
+	function move(){
+		clearInterval(timer);
+		var start=outer.scrollLeft;
+		var end=imgs[0].offsetWidth*x;
+		var step=0;
+		var maxStep=7;
+		var everyStep=(end-start)/maxStep;
+		timer=setInterval(function(){
+			step++;
+			if(step>=maxStep){
+				step=0;
+				clearInterval(timer);
+			}
+			outer.scrollLeft+=everyStep;
+		},20);
+	}
+	function autoMove(){
+		clearInterval(timer2);
+		timer2=setInterval(function(){
+			x++;
+			if(x>=imgs.length){
+				x=0;
+			}
+			console.log(x);
+			move();
+			fn_style();
+		},5000);
+	}
+	autoMove();
+	function fn_style(){
+		for(var i=0;i<lis.length;i++){
+			lis[i].className="";
+		}
+		lis[x].className="select";
+	}
+	for(var m=0;m<lis.length;m++){
+		lis[m].onmouseover=function(){
+			for(var n=0;n<lis.length;n++){
+				if(lis[n]==this){
+					x=n;
+					clearInterval(timer2);
+					move();
+					fn_style();
+					autoMove();
+				}
+			}
+		}
+	}
+	op[0].onclick=function(){
+		clearInterval(timer2);
+		if(x<=0){
+			x=imgs.length;
+		}
+		x--;
+		move();
+		fn_style();
+		autoMove();
+	}
+	op[1].onclick=function(){
+		clearInterval(timer2);
+		x++;
+		if(x>=imgs.length){
+			x=0;
+		}
+		move();
+		fn_style();
+		autoMove();
+	}
+</script>
+<script type="text/javascript">
+	var NewTapspans=document.getElementsByClassName("NewTap")[0].getElementsByTagName("span");
+	var taps=document.getElementsByClassName("taps");
+	function Show(a){
+		fn_clean();
+		NewTapspans[a].id="point";
+		taps[a].id="TapShow";
+	}
+	function fn_clean(){
+		NewTapspans[0].id="";
+		taps[0].id="";
+		NewTapspans[1].id="";
+		taps[1].id="";
+		NewTapspans[2].id="";
+		taps[2].id="";
+	}
+</script>
+</html>

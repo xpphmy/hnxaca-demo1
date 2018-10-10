@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>解决方案</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/menuBar_css.css">
+    <link rel="stylesheet" href="css/lrtk.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            position: relative;
+        }
+        .center1{
+            width: 100%;
+            height:350px;
+            position: relative;
+        }
+        .center1 img{
+            width: 100%;
+            height:350px;
+            position: absolute;z-index:-3;
+        }
+        .center1Img{
+            width:100%;
+            height:350px;
+            background:#000;
+            opacity:.1;
+            position: absolute;z-index:1;
+        }
+        .circular{
+            width:100%;
+            height:250px;
+          position: absolute;top:150px;z-index:4;
+        }
+         .circular p{
+            font-size:28px;
+            text-align: center;
+            font-weight: 400;
+            color: #fff;
+            letter-spacing:10;
+            -webkit-animation:movep 5s  ease-in-out 1s infinite alternate;
+            animation:movep 5s  ease-in-out 1s infinite alternate;
+            -moz-animation:movep 5s  ease-in-out 1s infinite alternate;
+            -o-animation:movep 5s  ease-in-out 1s infinite alternate;
+            -ms-animation:movep 5s  ease-in-out 1s infinite alternate;
+         }
+        @keyframes movep{
+            30%{
+                font-size:28px;
+                font-weight: 400;
+                letter-spacing:0;
+            }
+            50%{
+                font-size:36px;
+                font-weight: 600;
+                letter-spacing:30px;
+            }
+            70%{
+                font-size:28px;
+                font-weight: 400;
+                letter-spacing:0;
+            }
+        }
+         .circular p:nth-child(1){
+            margin-top:0px;
+            letter-spacing:10px;
+         }
+        .centerOpening{
+            width:100%;
+            height:200px;
+            background:#fff;
+        }
+        .centerOpening figcaption{
+            text-align: center;
+            font-size:25px;
+            line-height:40px;
+            text-shadow: -8px -7px 8px rgba(25,25,200,.5),5px 5px 5px rgba(168,168,168,1),20px 8px 10px rgba(40,20,100,1);
+        }
+        .centerOpening figcaption:nth-child(1){
+        padding-top:70px;
+        color:#199bee;
+        }
+        .centerOpening figcaption:nth-child(2){
+            color:#6690dd;
+        }
+        .center2{
+            width: 70%;
+            margin: 80px auto;
+            font-size:20px;
+            text-indent:30px;
+            line-height:25px;
+           /* background:#fefcfc;*/
+            padding:5%;
+            color: #68b7f9;
+            letter-spacing:3px;
+            background: url(images/picture/8.jpg) 0 0 no-repeat;
+        }
+        .center2Img{
+            width:70%;
+            height:550px;
+            margin: 0 auto;
+        }
+        .center2Img img{
+            width:100%;
+            height:500px;
+        }
+        .center2Img p{
+            width:100%;
+            height:50px;
+            text-align: center;
+            line-height:50px;
+            font-size:18px;
+            color: #212122;
+        }
+        .center3{
+            width: 100%;
+            /*height: 1000px;*/
+            margin:80px auto -5px;
+            position: relative;
+            overflow: hidden;
+            background: -webkit-linear-gradient(top, #CED8E4, #EEF2F6);
+        }
+        .center3 h2{
+            width:320px;
+            margin-top:35px;
+            padding:5px 20px;
+            line-height:40px;
+            text-align:right;
+            color: #fff;
+            background: -webkit-linear-gradient(left, #00CD9F, #00D3D2);
+        }
+        .center3 section{
+            width:80%;
+            margin:20px auto 0;
+            padding-bottom:50px;
+        }
+        .center3 section li{
+            width:100%;
+            line-height:50px;
+            color: #144e6b;
+            font-size:18px;
+            font-weight:500;
+        }
+        .center3 section li i{
+        	font-size:24px;
+			font-weight:500;
+        }
+        .totop{
+        	display: block;
+        	margin:0 auto;
+        	cursor: pointer;
+        }
+        .footer{
+        	position: relative;
+        }
+    </style>
+</head>
+<body style="height:2000px;background: #DCEDF9;">
+<!-- header -->
+	<header class="top">
+		<section class="topCont">
+			<img src="images/logologo.png" alt="">
+		</section>
+		<nav class="nav">
+			<ul id="ulHeaderNav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="NewsInformation.html" class="xiasanjiao" id="select" style="color: #fff;font-weight:300;border-bottom: none;">新闻资讯</a></li>
+				<li><a href="ProductIntroduction.html" class="xiasanjiao">产品介绍</a></li>
+				<li><a href="Solution.html" class="xiasanjiao" style="color:#0eeee1;font-weight:900;border-bottom: 3px solid #ae0711; ">解决方案</a></li>
+				<li><a href="CustomerService_OnlineQuery.html" class="xiasanjiao">客户服务</a></li>
+				<li><a href="DownloadCenter.html" class="xiasanjiao">下载中心</a></li>
+				<li><a href="AboutUs.html" class="xiasanjiao">关于我们</a></li>
+			</ul>
+		</nav>
+		<section class="tab" id="popHeaderNav">
+		<!--新闻资讯 -->
+			<section class="navTab">
+                <ul class="">
+                    <li class=""><a href="#" class="">最新通知</a></li>
+                    <li class=""><a href="#" class="">公司新闻</a></li>
+                    <li class=""><a href="#" class="">行业动态</a></li>
+                    <li class=""><a href="#" class="">政策文件</a></li>
+                    <li class=""><a href="#" class="">标准规范</a></li>
+                </ul>
+            </section>
+        <!--产品介绍  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">个人证书</a></li>
+                    <li class=""><a href="#" class="">企业证书</a></li>
+                    <li class=""><a href="#" class="">服务器证书</a></li>
+                </ul>
+            </section>
+        <!--解决方案  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">证券行业</a></li>
+                    <li class=""><a href="#" class="">卫生行业</a></li>
+                    <li class=""><a href="#" class="">保险行业</a></li>
+                    <li class=""><a href="#" class="">电子政务行业</a></li>
+                    <li class=""><a href="#" class="">电子商务行业</a></li>
+                    <li class=""><a href="#" class="">银行电子认证</a></li>
+                </ul>
+            </section>
+        <!--客户服务  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">证书办理</a></li>
+                    <li class=""><a href="#" class="">业务流程</a></li>
+                    <li class=""><a href="#" class="">在线查询</a></li>
+                    <li class=""><a href="#" class="">常见问题</a></li>
+                    <li class=""><a href="#" class="">大客户区</a></li>
+                    <li class=""><a href="#" class="">联系客服</a></li>
+                    <li class=""><a href="#" class="">客户服务</a></li>
+                    <li class=""><a href="#" class="">证书查询</a></li>
+                </ul>
+            </section>
+        <!--下载中心  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">技术资料</a></li>
+                    <li class=""><a href="#" class="">软件驱动</a></li>
+                    <li class=""><a href="#" class="">申请材料</a></li>
+                    <li class=""><a href="#" class="">其他</a></li>
+                </ul>
+            </section>
+        <!--关于我们  -->
+            <section class="navTab">
+               <ul class="">
+                    <li class=""><a href="#" class="">联系我们</a></li>
+                    <li class=""><a href="#" class="">企业简介</a></li>
+                    <li class=""><a href="#" class="">资质荣誉</a></li>
+                    <li class=""><a href="#" class="">发展历程</a></li>
+                    <li class=""><a href="#" class="">诚聘精英</a></li>
+                    <li class=""><a href="#" class="">客户投诉</a></li>
+                </ul>
+            </section>
+		</section>
+	</header>
+<!--head结束-->
+<!--客服 -->
+	<div class="phone" id="top"></div>
+<!-- center1 -->
+    <nav class="center1">
+        <img src="img/22.jpg" alt="">
+        <div class="center1Img"></div>
+        <div class="circular">
+            <p>解决方案</p>
+            <p>Solution</p>
+        </div>
+    </nav>
+    <nav class="centerOpening">
+        <figcaption>证券行业网上开户解决方案</figcaption>
+        <figcaption>Solution of Online Account Opening in Securities Industry</figcaption>
+    </nav>
+<!-- center2 -->
+    <nav class="center2">为了顺应证券电子化的发展，证监会、登记结算公司等监管部门鼓励证券公司创新和拓展业务模式，将已有的传统业务模式电子化，提出客户通过网上开户系统自助开立账户。为保证开户交易安全，采用数字证书技术，可以实现客户身份真实性、操作的不 可抵赖性，确保客户相关业务操作符合法律法规的要求。信安CA以满足证券行业需求为主导，提供客户身份在线验证、数字证书自助申请、开户及交易签名保障等一体化、规范化的服务。</nav>
+    <div class="center2Img">
+        <img src="images/picture/p9.png" alt="">
+        <p>系统架构图</p>
+    </div>
+<!-- center3 -->
+    <div class="center3">
+        <h2>方案特点：</h2>
+        <section>
+            <ul>
+                <li><i>1/</i>&nbsp身份验证方式多样化。通过在线视频、实名验证等多种安全手段实现身份确认，保障身份的真实性。</li>
+                <li><i>2/</i>&nbsp可支持多种终端设备。支持客户或证券人员通过PC、平板电脑等申请开户。</li>
+                <li><i>3/</i>&nbsp真实有效的身份认证。将用户真实合法身份和数字证书绑定，实现对网上信息传递双方强身份的识别与鉴别。</li>
+                <li><i>4/</i>&nbsp法律的合规性原则。符合《中国人民共和国电子签名法》的要求；能够有效保证网上证券开户和交易行为的真实、可靠且具有法律效力。</li>
+            </ul>
+        </section>
+        <img src="images/totop(1).png" alt="" class="totop">
+    </div>
+<!-- 底部 -->
+    <!-- -->
+    <div class="footer" style="height: 10%; background: #3d3d3d;">
+        <div class="footer1">
+            <span>河南省信息安全电子认证中心 --</span>
+            <span>河南省信息化发展有限公司</span>
+            <span>客服电话：
+                <span class="inn1">（0371）96596</span>
+            </span>
+        </div>
+        <div class="footerImg">
+        	<img src="images/logo.png" alt="">
+        	<img src="images/weixin.jpg" alt="">
+        </div>
+        <p class="footer3">
+            <a href="#">返回首页</a>
+            |
+            <a href="">新闻资讯</a>
+            |
+            <a href="">产品介绍</a>
+            |
+            <a href="">解决方案</a>
+            |
+            <a href="">客户服务</a>
+            |
+            <a href="">下载中心</a>
+            |
+            <a href="">关于我们</a>
+        </p>
+        <p class="footer4"> CopyRight © 2017 hnxaca.com.All&nbspRights&nbspReserved.&nbsp豫ICP备14012421号-1&nbsp版权所有</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/byClass.js"></script>
+ <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+<script type="text/javascript" src="js/jsXiala_style2.js" ></script>
+<script type="text/javascript" src="js/lrtk.js" ></script>
+</html>
